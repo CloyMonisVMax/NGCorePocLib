@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'NGCorePocLib'
-  s.version          = '0.0.6'
+  s.version          = '0.0.7'
   s.summary          = 'NGCorePocLib is a poc for VMNgLibs'
   s.description      = 'NGCorePocLib will implement CI-CD via Jenkins and Appium'
   s.homepage         = 'https://github.com/Cloy Monis/NGCorePocLib'
