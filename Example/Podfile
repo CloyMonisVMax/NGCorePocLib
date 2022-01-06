@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'NGCorePocLib_Example' do
+  pod 'NGCorePocLib', :path => '../'
+
+  target 'NGCorePocLib_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
