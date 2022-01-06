@@ -8,6 +8,6 @@ import Foundation
 
 public class NGCorePocMain{
     
-    public static let version = "0.0.1"
+    public static let version = "0.0.5"
     
 }
