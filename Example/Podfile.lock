@@ -1,0 +1,16 @@
+PODS:
+  - NGCorePocLib (0.1.0)
+
+DEPENDENCIES:
+  - NGCorePocLib (from `../`)
+
+EXTERNAL SOURCES:
+  NGCorePocLib:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  NGCorePocLib: 002684b98b2972ca770ab6867f373bb96df291f0
+
+PODFILE CHECKSUM: f2b807e3eef6654054de7a0dcf4ac66d9126977f
+
+COCOAPODS: 1.11.2

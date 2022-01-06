@@ -1,0 +1,6 @@
+framework module Pods_NGCorePocLib_Tests {
+  umbrella header "Pods-NGCorePocLib_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

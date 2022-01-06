@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import NGCorePocLib
 
 class ViewController: UIViewController {
 
+    @IBOutlet var labelAppDesc: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.labelAppDesc.text = "Implementation of CI-CD from NGCorePoc version:\(NGCorePocMain.version)"
     }
 
     override func didReceiveMemoryWarning() {

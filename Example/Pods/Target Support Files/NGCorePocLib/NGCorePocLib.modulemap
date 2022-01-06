@@ -1,0 +1,6 @@
+framework module NGCorePocLib {
+  umbrella header "NGCorePocLib-umbrella.h"
+
+  export *
+  module * { export * }
+}
