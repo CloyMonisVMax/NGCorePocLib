@@ -8,6 +8,7 @@
 
 import UIKit
 import NGCorePocLib
+let TAG = "NGCorePocLib"
 
 class ViewController: UIViewController {
 
@@ -16,7 +17,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.labelAppDesc.text = "Implementation of CI-CD from NGCorePoc version:\(NGCorePocMain.version)"
+        let str = "Implementation of CI-CD from NGCorePoc version:\(NGCorePocMain.version)"
+        self.labelAppDesc.text = str
+        print("\(TAG):\(str)")
+        let response = NGCorePocMain.compute(lhs: 2, rhs: 2)
+        print("\(TAG):\(response)")
     }
 
     override func didReceiveMemoryWarning() {
