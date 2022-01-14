@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         let str = "Implementation of CI-CD from NGCorePoc version:\(NGCorePocMain.version)"
         self.labelAppDesc.text = str
         print("\(TAG):\(str)")
-        let response = NGCorePocMain.compute(lhs: 3, rhs: 3)
+        let response = NGCorePocMain.compute(lhs: 4, rhs: 3)
         print("\(TAG):\(response)")
     }
 
