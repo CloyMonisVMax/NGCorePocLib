@@ -1,0 +1,15 @@
+Jenkins send IPA to QA.
+Jenkins send IPA to test flight.
+Implement Discussed GitFlow
+Plugin to test application
+IPA files should get triggered and send by email
+Implement XCTestCase Fits in CI-CD flow
+Implement Appium Fits in CI-CD flow
+Prepare a proper documentation for all things that have been implemented
+Learn Github pipelines
+Jenkins documentation plugin
+
+Plugin references : https://plugins.jenkins.io/xcode-plugin/
+
+
+

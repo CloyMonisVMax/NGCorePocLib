@@ -30,8 +30,8 @@
 /* Begin PBXFileReference section */
 		067F927C960A8FF24A67C820 /* Pods_NGCorePocLib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NGCorePocLib_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		185D2B64FC2F39D3B1022D3C /* Pods-NGCorePocLib_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGCorePocLib_Example.release.xcconfig"; path = "Target Support Files/Pods-NGCorePocLib_Example/Pods-NGCorePocLib_Example.release.xcconfig"; sourceTree = "<group>"; };
-		52401E40595127716BDF0F2B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		5918FAA517032C154D7C0DAA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		52401E40595127716BDF0F2B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5918FAA517032C154D7C0DAA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5CA8B41A8689F6153FD0F525 /* Pods_NGCorePocLib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NGCorePocLib_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* NGCorePocLib_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NGCorePocLib_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,8 +44,9 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		60E4F371BD6EEE5B9708ABA0 /* Pods-NGCorePocLib_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGCorePocLib_Tests.release.xcconfig"; path = "Target Support Files/Pods-NGCorePocLib_Tests/Pods-NGCorePocLib_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		9AA8821F27880EB000259091 /* ToDo */ = {isa = PBXFileReference; lastKnownFileType = text; path = ToDo; sourceTree = "<group>"; };
 		D6B5F719F644D0F71D27A530 /* Pods-NGCorePocLib_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGCorePocLib_Example.debug.xcconfig"; path = "Target Support Files/Pods-NGCorePocLib_Example/Pods-NGCorePocLib_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		E08597186E06469ABB8054A3 /* NGCorePocLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = NGCorePocLib.podspec; path = ../NGCorePocLib.podspec; sourceTree = "<group>"; };
+		E08597186E06469ABB8054A3 /* NGCorePocLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NGCorePocLib.podspec; path = ../NGCorePocLib.podspec; sourceTree = "<group>"; };
 		FE1A0041060F1104EDCA5BCB /* Pods-NGCorePocLib_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGCorePocLib_Tests.debug.xcconfig"; path = "Target Support Files/Pods-NGCorePocLib_Tests/Pods-NGCorePocLib_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,7 +87,6 @@
 				FE1A0041060F1104EDCA5BCB /* Pods-NGCorePocLib_Tests.debug.xcconfig */,
 				60E4F371BD6EEE5B9708ABA0 /* Pods-NGCorePocLib_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -156,6 +156,7 @@
 				E08597186E06469ABB8054A3 /* NGCorePocLib.podspec */,
 				52401E40595127716BDF0F2B /* README.md */,
 				5918FAA517032C154D7C0DAA /* LICENSE */,
+				9AA8821F27880EB000259091 /* ToDo */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -227,6 +228,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
