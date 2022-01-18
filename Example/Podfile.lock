@@ -1,16 +1,30 @@
 PODS:
-  - NGCorePocLib (0.1.0)
+  - AppCenter (4.4.1):
+    - AppCenter/Analytics (= 4.4.1)
+    - AppCenter/Crashes (= 4.4.1)
+  - AppCenter/Analytics (4.4.1):
+    - AppCenter/Core
+  - AppCenter/Core (4.4.1)
+  - AppCenter/Crashes (4.4.1):
+    - AppCenter/Core
+  - NGCorePocLib (0.0.9)
 
 DEPENDENCIES:
+  - AppCenter
   - NGCorePocLib (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AppCenter
 
 EXTERNAL SOURCES:
   NGCorePocLib:
     :path: "../"
 
 SPEC CHECKSUMS:
-  NGCorePocLib: 002684b98b2972ca770ab6867f373bb96df291f0
+  AppCenter: b0b6f1190215b5f983c42934db718f3b46fff3c0
+  NGCorePocLib: 903c4408f9c7f3d3bc1f396f063851cd60cea66b
 
-PODFILE CHECKSUM: f2b807e3eef6654054de7a0dcf4ac66d9126977f
+PODFILE CHECKSUM: 0194e3a6970a155f409c565af9f55c30f47b5756
 
 COCOAPODS: 1.11.2

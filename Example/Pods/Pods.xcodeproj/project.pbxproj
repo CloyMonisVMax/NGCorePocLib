@@ -6,70 +6,96 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		A3282A5B2437E609EEB85861D7ECE717 /* AppCenter */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0437EB52E47F4DB542AB24721F109DA8 /* Build configuration list for PBXAggregateTarget "AppCenter" */;
+			buildPhases = (
+				1D06934B6CA4E608DB4BC52D02B50E2F /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = AppCenter;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		0044AC8EAC879BE9C250722BB14AA0AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		0C78B09261FDE0082400DE93BC04203D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		3305D9653795760DAA174740266090CA /* Pods-NGCorePocLib_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 74EB3325AA3535D0B53BCF6FD9638A78 /* Pods-NGCorePocLib_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22C98264B804BC80DE30860778D0116B /* NGCorePocLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52562BDBD316F0FF07F1EC7A93B2675E /* NGCorePocLib-dummy.m */; };
+		355AA1A9C676A65B53DE344611B34F72 /* NGCorePocMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEC103FEFD375E0A2BA600E3BC48527 /* NGCorePocMain.swift */; };
+		49A1BD8DB7A22FA97B423832B2C040A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		6DB2F005E1D020FFB46D9C7A2D3A1682 /* Pods-NGCorePocLib_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 99025EA7BFE99814081E64502BA9518D /* Pods-NGCorePocLib_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8E0182A9A968855637AEF37A23CD54F9 /* NGCorePocLib-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE1E9EC17C23BA52D7B2FA4D244E543C /* NGCorePocLib-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E0182A9A968855637AEF37A23CD54F9 /* NGCorePocLib-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FD73186AF810BB59CE8AA1A46787E0E2 /* NGCorePocLib-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		906BFCDC249671E98A1627CAB312B6B1 /* Pods-NGCorePocLib_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A153F4B671B5E8785CADF3B104877B /* Pods-NGCorePocLib_Tests-dummy.m */; };
-		9A9C54AA2786E570004F5FFC /* NGCorePocMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C54A92786E570004F5FFC /* NGCorePocMain.swift */; };
-		A5D0A7B8315EA4F7B04E34B181158CE9 /* Pods-NGCorePocLib_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD6BAF417C9324663C0D8CC3039D68E /* Pods-NGCorePocLib_Example-dummy.m */; };
-		D1C1B135B244DF6DD1ACD1C1223061FC /* NGCorePocLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBAB900A904740A3148F781D2CFF70A /* NGCorePocLib-dummy.m */; };
-		EAF0581DF2AEC7F537A3E13FD97789C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D945F67C385F2ABEE26792E5B83F66B6 /* Pods-NGCorePocLib_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD6BAF417C9324663C0D8CC3039D68E /* Pods-NGCorePocLib_Example-dummy.m */; };
+		FFC0D24AC19DCCC3D21C008B5E317F3A /* Pods-NGCorePocLib_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 74EB3325AA3535D0B53BCF6FD9638A78 /* Pods-NGCorePocLib_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		89B246D3E406358D3EB62E95F6DF1B0E /* PBXContainerItemProxy */ = {
+		3E3684A5D8D890C4986788886CB010D9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B113B2C2BBCEA4ED9CEAA02E37A0E027;
 			remoteInfo = "Pods-NGCorePocLib_Example";
 		};
-		BF9A49704DE14E89D1A7B4C5BC0D3AB5 /* PBXContainerItemProxy */ = {
+		A8B2367B149B5FF28AAE56B0CE020A60 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 87067CF5BD4576FA616A38256D74F241;
 			remoteInfo = NGCorePocLib;
 		};
+		DFED8A99E694F69F717997853FEE3135 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3282A5B2437E609EEB85861D7ECE717;
+			remoteInfo = AppCenter;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		003FF8B25BB111F909E2ACC1C3DA455D /* NGCorePocLib-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NGCorePocLib-prefix.pch"; sourceTree = "<group>"; };
 		01F3F8BE3999CA12D04B526588F861F0 /* Pods-NGCorePocLib_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NGCorePocLib_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		05DCD4AEC2435E2855D0E70D37CFD066 /* Pods-NGCorePocLib_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NGCorePocLib_Tests-Info.plist"; sourceTree = "<group>"; };
 		0A0F457C1F4469C2B0ECB5584249B6B4 /* NGCorePocLib */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NGCorePocLib; path = NGCorePocLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		164AF4BE3C354CB2DB3A08D5A247223D /* Pods-NGCorePocLib_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NGCorePocLib_Example-frameworks.sh"; sourceTree = "<group>"; };
 		181C880E8934FB66EC67B47651B86A25 /* Pods-NGCorePocLib_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NGCorePocLib_Example-Info.plist"; sourceTree = "<group>"; };
-		31654C928CBA443FE613D60AAFE4D303 /* NGCorePocLib-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NGCorePocLib-Info.plist"; sourceTree = "<group>"; };
+		1FEC103FEFD375E0A2BA600E3BC48527 /* NGCorePocMain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NGCorePocMain.swift; path = NGCorePocLib/Classes/Core/NGCorePocMain.swift; sourceTree = "<group>"; };
+		2F2DC474063664FFFDD408D184D1A95D /* NGCorePocLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NGCorePocLib.release.xcconfig; sourceTree = "<group>"; };
 		35F1B02E5A0753B3E4AC164B6531086D /* Pods-NGCorePocLib_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NGCorePocLib_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3D0CF4C8772C0B488AAD50FC8C8B195A /* AppCenter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppCenter.debug.xcconfig; sourceTree = "<group>"; };
 		4586F14F053463BB3B7E8952AFA60BD1 /* Pods-NGCorePocLib_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NGCorePocLib_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		52562BDBD316F0FF07F1EC7A93B2675E /* NGCorePocLib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NGCorePocLib-dummy.m"; sourceTree = "<group>"; };
 		5972BB4A1A7671DA61C35424C6AD4964 /* Pods-NGCorePocLib_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NGCorePocLib_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		597699BA046A2BDC8FC565D0D42C450E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		72F1C87A91DD130F3F8462BC71DEC0D9 /* AppCenter.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AppCenter.xcframework; path = "AppCenter-SDK-Apple/AppCenter.xcframework"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		73A244A40F93CF19B3884C28B16D7E2A /* Pods-NGCorePocLib_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NGCorePocLib_Example.modulemap"; sourceTree = "<group>"; };
 		74EB3325AA3535D0B53BCF6FD9638A78 /* Pods-NGCorePocLib_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NGCorePocLib_Example-umbrella.h"; sourceTree = "<group>"; };
-		7C1EED190361D55342274921DC4F8D02 /* NGCorePocLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NGCorePocLib.release.xcconfig; sourceTree = "<group>"; };
+		79214E60725F97242E58965C4A322721 /* NGCorePocLib-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NGCorePocLib-prefix.pch"; sourceTree = "<group>"; };
+		7C12D123361DD3A2EE926A11305A2EBA /* NGCorePocLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NGCorePocLib.debug.xcconfig; sourceTree = "<group>"; };
 		80A153F4B671B5E8785CADF3B104877B /* Pods-NGCorePocLib_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NGCorePocLib_Tests-dummy.m"; sourceTree = "<group>"; };
+		87DB8186B79B5ACC9F9D8CC39BB47C36 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		939C05C5608CCF3F8C55035F42D68FBD /* Pods-NGCorePocLib_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NGCorePocLib_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		97129F7A4CD8E26CCA7EC9CD3C7D21A9 /* NGCorePocLib.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NGCorePocLib.modulemap; sourceTree = "<group>"; };
 		99025EA7BFE99814081E64502BA9518D /* Pods-NGCorePocLib_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NGCorePocLib_Tests-umbrella.h"; sourceTree = "<group>"; };
-		9A9C54A92786E570004F5FFC /* NGCorePocMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGCorePocMain.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A77A13D651266E30BAC40A1698CED9A /* NGCorePocLib-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NGCorePocLib-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F2FBAFCB8BC44264E9531A58D578370 /* Pods-NGCorePocLib_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NGCorePocLib_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A1AF8F832BAA4AF162816A5E6EC6BFC6 /* NGCorePocLib.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NGCorePocLib.modulemap; sourceTree = "<group>"; };
 		B0F1D6AD902BBD109DB5805F25176C0F /* Pods-NGCorePocLib_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NGCorePocLib_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B3317AEAC9226DBDAA9295522C367047 /* Pods-NGCorePocLib_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NGCorePocLib_Tests.modulemap"; sourceTree = "<group>"; };
+		B69D7A7B4C1622AD650EA2E030736707 /* AppCenterAnalytics.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AppCenterAnalytics.xcframework; path = "AppCenter-SDK-Apple/AppCenterAnalytics.xcframework"; sourceTree = "<group>"; };
 		BBD6BAF417C9324663C0D8CC3039D68E /* Pods-NGCorePocLib_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NGCorePocLib_Example-dummy.m"; sourceTree = "<group>"; };
-		BEBAB900A904740A3148F781D2CFF70A /* NGCorePocLib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NGCorePocLib-dummy.m"; sourceTree = "<group>"; };
-		C87B0DDBA2E6C44A28900F8078FD14C0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		CE1E9EC17C23BA52D7B2FA4D244E543C /* NGCorePocLib-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NGCorePocLib-umbrella.h"; sourceTree = "<group>"; };
-		E4F815EA792C2F3F377DA5309DD4C59F /* NGCorePocLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NGCorePocLib.debug.xcconfig; sourceTree = "<group>"; };
+		BE274EEC6DDBCB38F1354C35DB961431 /* NGCorePocLib.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = NGCorePocLib.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C39874D5A2964042B413F857C0520145 /* AppCenter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppCenter.release.xcconfig; sourceTree = "<group>"; };
+		D024FDD6D97527CD1036848CD81D190B /* AppCenterCrashes.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AppCenterCrashes.xcframework; path = "AppCenter-SDK-Apple/AppCenterCrashes.xcframework"; sourceTree = "<group>"; };
+		D4A0DCCFCF8A4966F3592A502BDF1EB0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		E039AAFC7E20C4A1758D09A8960AA7D9 /* AppCenter-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "AppCenter-xcframeworks.sh"; sourceTree = "<group>"; };
 		E8ECD71E957926DFC49E12E444753372 /* Pods-NGCorePocLib_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-NGCorePocLib_Example"; path = Pods_NGCorePocLib_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E991CF2B1FCB09540264C58752FC0B2C /* Pods-NGCorePocLib_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NGCorePocLib_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FA85FB42E17F2D5F2AE39CF745CB38E5 /* NGCorePocLib.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = NGCorePocLib.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FD1537A8BDE4392E55BC94389880A808 /* Pods-NGCorePocLib_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-NGCorePocLib_Tests"; path = Pods_NGCorePocLib_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD73186AF810BB59CE8AA1A46787E0E2 /* NGCorePocLib-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NGCorePocLib-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +107,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		610DE17E4607979EFF471B7633A80152 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49A1BD8DB7A22FA97B423832B2C040A2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8C96D4F9B5A6DEE68A6DFCC0263D3D84 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -89,26 +123,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CCE126F0B6DFE829A3CFA0121A5CCBAA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EAF0581DF2AEC7F537A3E13FD97789C2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0E36B05CD3DE5201B2814DC6B71C5407 /* NGCorePocLib */ = {
+		2F2B7A9E8A3AFDF43FD838C02D566CD8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9A9C54A82786E55B004F5FFC /* Core */,
-				80C98DA3AA7C484512BB6BD274C2142A /* Pod */,
-				7DB4EFC8A62361A5BE7E28F29991CA36 /* Support Files */,
+				B69D7A7B4C1622AD650EA2E030736707 /* AppCenterAnalytics.xcframework */,
 			);
-			name = NGCorePocLib;
-			path = ../..;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		3FAA5CBB790F901A3A0462DA15DD11D6 /* Targets Support Files */ = {
@@ -154,27 +177,12 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		7DB4EFC8A62361A5BE7E28F29991CA36 /* Support Files */ = {
+		70407B4A10D35AA5E6C117F95E9E9A78 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				97129F7A4CD8E26CCA7EC9CD3C7D21A9 /* NGCorePocLib.modulemap */,
-				BEBAB900A904740A3148F781D2CFF70A /* NGCorePocLib-dummy.m */,
-				31654C928CBA443FE613D60AAFE4D303 /* NGCorePocLib-Info.plist */,
-				003FF8B25BB111F909E2ACC1C3DA455D /* NGCorePocLib-prefix.pch */,
-				CE1E9EC17C23BA52D7B2FA4D244E543C /* NGCorePocLib-umbrella.h */,
-				E4F815EA792C2F3F377DA5309DD4C59F /* NGCorePocLib.debug.xcconfig */,
-				7C1EED190361D55342274921DC4F8D02 /* NGCorePocLib.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/NGCorePocLib";
-			sourceTree = "<group>";
-		};
-		80C98DA3AA7C484512BB6BD274C2142A /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				597699BA046A2BDC8FC565D0D42C450E /* LICENSE */,
-				FA85FB42E17F2D5F2AE39CF745CB38E5 /* NGCorePocLib.podspec */,
-				C87B0DDBA2E6C44A28900F8078FD14C0 /* README.md */,
+				D4A0DCCFCF8A4966F3592A502BDF1EB0 /* LICENSE */,
+				BE274EEC6DDBCB38F1354C35DB961431 /* NGCorePocLib.podspec */,
+				87DB8186B79B5ACC9F9D8CC39BB47C36 /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -182,18 +190,83 @@
 		831ADF5C8117EDB7A02F793BDC174B2C /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0E36B05CD3DE5201B2814DC6B71C5407 /* NGCorePocLib */,
+				96B8014ECA98055270C8AC33B043C2FB /* NGCorePocLib */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		9A9C54A82786E55B004F5FFC /* Core */ = {
+		847EBDDE94B66B5A82F61EB451C88447 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9A9C54A92786E570004F5FFC /* NGCorePocMain.swift */,
+				CCF3AAA61B16584A1E11774EB7B0ADCC /* AppCenter */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		85087D08E7B7C1D192737E810CB045D4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8CBBAACAA4138B66D82A6EAD676BFF28 /* Frameworks */,
 			);
 			name = Core;
-			path = NGCorePocLib/Classes/Core;
+			sourceTree = "<group>";
+		};
+		8A73CCCFE9DD339E100B629D77BED900 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				2F2B7A9E8A3AFDF43FD838C02D566CD8 /* Frameworks */,
+			);
+			name = Analytics;
+			sourceTree = "<group>";
+		};
+		8CBBAACAA4138B66D82A6EAD676BFF28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72F1C87A91DD130F3F8462BC71DEC0D9 /* AppCenter.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96B8014ECA98055270C8AC33B043C2FB /* NGCorePocLib */ = {
+			isa = PBXGroup;
+			children = (
+				1FEC103FEFD375E0A2BA600E3BC48527 /* NGCorePocMain.swift */,
+				70407B4A10D35AA5E6C117F95E9E9A78 /* Pod */,
+				F6DD73D42B71C347572533BC56C9A8DA /* Support Files */,
+			);
+			name = NGCorePocLib;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		B3B45CEB94D12F1AFCD73811CEF39A57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D024FDD6D97527CD1036848CD81D190B /* AppCenterCrashes.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B429B4E34BC53C308CEE01E3AB1A4C15 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E039AAFC7E20C4A1758D09A8960AA7D9 /* AppCenter-xcframeworks.sh */,
+				3D0CF4C8772C0B488AAD50FC8C8B195A /* AppCenter.debug.xcconfig */,
+				C39874D5A2964042B413F857C0520145 /* AppCenter.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AppCenter";
+			sourceTree = "<group>";
+		};
+		CCF3AAA61B16584A1E11774EB7B0ADCC /* AppCenter */ = {
+			isa = PBXGroup;
+			children = (
+				8A73CCCFE9DD339E100B629D77BED900 /* Analytics */,
+				85087D08E7B7C1D192737E810CB045D4 /* Core */,
+				ED5E0372385F80256AD185B82982C57C /* Crashes */,
+				B429B4E34BC53C308CEE01E3AB1A4C15 /* Support Files */,
+			);
+			name = AppCenter;
+			path = AppCenter;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -202,6 +275,7 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				831ADF5C8117EDB7A02F793BDC174B2C /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				847EBDDE94B66B5A82F61EB451C88447 /* Pods */,
 				538D2C9C6EA10BD4184A692A5AC2DCEC /* Products */,
 				3FAA5CBB790F901A3A0462DA15DD11D6 /* Targets Support Files */,
 			);
@@ -213,6 +287,14 @@
 				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED5E0372385F80256AD185B82982C57C /* Crashes */ = {
+			isa = PBXGroup;
+			children = (
+				B3B45CEB94D12F1AFCD73811CEF39A57 /* Frameworks */,
+			);
+			name = Crashes;
 			sourceTree = "<group>";
 		};
 		F40D16A10E0D11AC19ADBB8FD4487C44 /* Pods-NGCorePocLib_Example */ = {
@@ -230,6 +312,21 @@
 			);
 			name = "Pods-NGCorePocLib_Example";
 			path = "Target Support Files/Pods-NGCorePocLib_Example";
+			sourceTree = "<group>";
+		};
+		F6DD73D42B71C347572533BC56C9A8DA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1AF8F832BAA4AF162816A5E6EC6BFC6 /* NGCorePocLib.modulemap */,
+				52562BDBD316F0FF07F1EC7A93B2675E /* NGCorePocLib-dummy.m */,
+				9A77A13D651266E30BAC40A1698CED9A /* NGCorePocLib-Info.plist */,
+				79214E60725F97242E58965C4A322721 /* NGCorePocLib-prefix.pch */,
+				FD73186AF810BB59CE8AA1A46787E0E2 /* NGCorePocLib-umbrella.h */,
+				7C12D123361DD3A2EE926A11305A2EBA /* NGCorePocLib.debug.xcconfig */,
+				2F2DC474063664FFFDD408D184D1A95D /* NGCorePocLib.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/NGCorePocLib";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,11 +348,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DEC74441D1256A3BB33B35132ED60C5F /* Headers */ = {
+		AF7CFD097A625CB01204B1FF757E82B8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3305D9653795760DAA174740266090CA /* Pods-NGCorePocLib_Example-umbrella.h in Headers */,
+				FFC0D24AC19DCCC3D21C008B5E317F3A /* Pods-NGCorePocLib_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +364,7 @@
 			buildConfigurationList = 78EBA6B4E9B0706E17F3359656D9240C /* Build configuration list for PBXNativeTarget "NGCorePocLib" */;
 			buildPhases = (
 				5CD2B353C7328DA90177163CC9C21656 /* Headers */,
-				45D25262EF7B47EFCB5CC0546B19C8D4 /* Sources */,
+				AC3F7C2BEDFB9721230AC4667075D3F8 /* Sources */,
 				8C96D4F9B5A6DEE68A6DFCC0263D3D84 /* Frameworks */,
 				B313F00932E9A6FE3FD65E013944D776 /* Resources */,
 			);
@@ -282,17 +379,18 @@
 		};
 		B113B2C2BBCEA4ED9CEAA02E37A0E027 /* Pods-NGCorePocLib_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 45895E3FBA203B78D09D2F678F599F7B /* Build configuration list for PBXNativeTarget "Pods-NGCorePocLib_Example" */;
+			buildConfigurationList = DFC8475842EA9D2666244D0EC8779DB7 /* Build configuration list for PBXNativeTarget "Pods-NGCorePocLib_Example" */;
 			buildPhases = (
-				DEC74441D1256A3BB33B35132ED60C5F /* Headers */,
-				A7F78C4C379B01680195D3BC9490613F /* Sources */,
-				CCE126F0B6DFE829A3CFA0121A5CCBAA /* Frameworks */,
-				8C17BB330DC6BC687DACD95A897DCBCB /* Resources */,
+				AF7CFD097A625CB01204B1FF757E82B8 /* Headers */,
+				62112E3EF2E6037D63D428463AE6508B /* Sources */,
+				610DE17E4607979EFF471B7633A80152 /* Frameworks */,
+				3921BA9E3846D4393D890D46AF3A7558 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				59279937AEE81438DEE579FDE68AE71F /* PBXTargetDependency */,
+				1628CD52FDA11E69A74F10A37F6432BA /* PBXTargetDependency */,
+				8CDC32D9D28C8B5316DEDE0228F28798 /* PBXTargetDependency */,
 			);
 			name = "Pods-NGCorePocLib_Example";
 			productName = Pods_NGCorePocLib_Example;
@@ -311,7 +409,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				DE1E9830F169A9E99F2D299CA2F37019 /* PBXTargetDependency */,
+				F46669AB230567475AE57F244A0559D6 /* PBXTargetDependency */,
 			);
 			name = "Pods-NGCorePocLib_Tests";
 			productName = Pods_NGCorePocLib_Tests;
@@ -340,6 +438,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				A3282A5B2437E609EEB85861D7ECE717 /* AppCenter */,
 				87067CF5BD4576FA616A38256D74F241 /* NGCorePocLib */,
 				B113B2C2BBCEA4ED9CEAA02E37A0E027 /* Pods-NGCorePocLib_Example */,
 				C2359340D27750F33E05CDB63CA34747 /* Pods-NGCorePocLib_Tests */,
@@ -348,14 +447,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		85487305AFC5445038EC596248DFFC89 /* Resources */ = {
+		3921BA9E3846D4393D890D46AF3A7558 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8C17BB330DC6BC687DACD95A897DCBCB /* Resources */ = {
+		85487305AFC5445038EC596248DFFC89 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -371,13 +470,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D06934B6CA4E608DB4BC52D02B50E2F /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/AppCenter/AppCenter-xcframeworks.sh",
+				"${PODS_ROOT}/AppCenter/AppCenter-SDK-Apple/AppCenterAnalytics.xcframework",
+				"${PODS_ROOT}/AppCenter/AppCenter-SDK-Apple/AppCenter.xcframework",
+				"${PODS_ROOT}/AppCenter/AppCenter-SDK-Apple/AppCenterCrashes.xcframework",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputPaths = (
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AppCenter/Analytics/AppCenterAnalytics.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AppCenter/Core/AppCenter.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AppCenter/Crashes/AppCenterCrashes.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/AppCenter/AppCenter-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		45D25262EF7B47EFCB5CC0546B19C8D4 /* Sources */ = {
+		62112E3EF2E6037D63D428463AE6508B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1C1B135B244DF6DD1ACD1C1223061FC /* NGCorePocLib-dummy.m in Sources */,
-				9A9C54AA2786E570004F5FFC /* NGCorePocMain.swift in Sources */,
+				D945F67C385F2ABEE26792E5B83F66B6 /* Pods-NGCorePocLib_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,35 +512,56 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A7F78C4C379B01680195D3BC9490613F /* Sources */ = {
+		AC3F7C2BEDFB9721230AC4667075D3F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5D0A7B8315EA4F7B04E34B181158CE9 /* Pods-NGCorePocLib_Example-dummy.m in Sources */,
+				22C98264B804BC80DE30860778D0116B /* NGCorePocLib-dummy.m in Sources */,
+				355AA1A9C676A65B53DE344611B34F72 /* NGCorePocMain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		59279937AEE81438DEE579FDE68AE71F /* PBXTargetDependency */ = {
+		1628CD52FDA11E69A74F10A37F6432BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppCenter;
+			target = A3282A5B2437E609EEB85861D7ECE717 /* AppCenter */;
+			targetProxy = DFED8A99E694F69F717997853FEE3135 /* PBXContainerItemProxy */;
+		};
+		8CDC32D9D28C8B5316DEDE0228F28798 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NGCorePocLib;
 			target = 87067CF5BD4576FA616A38256D74F241 /* NGCorePocLib */;
-			targetProxy = BF9A49704DE14E89D1A7B4C5BC0D3AB5 /* PBXContainerItemProxy */;
+			targetProxy = A8B2367B149B5FF28AAE56B0CE020A60 /* PBXContainerItemProxy */;
 		};
-		DE1E9830F169A9E99F2D299CA2F37019 /* PBXTargetDependency */ = {
+		F46669AB230567475AE57F244A0559D6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-NGCorePocLib_Example";
 			target = B113B2C2BBCEA4ED9CEAA02E37A0E027 /* Pods-NGCorePocLib_Example */;
-			targetProxy = 89B246D3E406358D3EB62E95F6DF1B0E /* PBXContainerItemProxy */;
+			targetProxy = 3E3684A5D8D890C4986788886CB010D9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1A5E61A9C1E978BABFFF8FDFF740E062 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C39874D5A2964042B413F857C0520145 /* AppCenter.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		1EDA4DD795E92E3124247DC3C510B9C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4F815EA792C2F3F377DA5309DD4C59F /* NGCorePocLib.debug.xcconfig */;
+			baseConfigurationReference = 7C12D123361DD3A2EE926A11305A2EBA /* NGCorePocLib.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -511,7 +655,7 @@
 			};
 			name = Debug;
 		};
-		37D64A81471D295FFDC71D257680CAE8 /* Debug */ = {
+		72E028CD46536F322977ACE81735BC05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B0F1D6AD902BBD109DB5805F25176C0F /* Pods-NGCorePocLib_Example.debug.xcconfig */;
 			buildSettings = {
@@ -575,6 +719,19 @@
 			};
 			name = Debug;
 		};
+		AB67B16B2EAAA213F2B250F9F40316CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D0CF4C8772C0B488AAD50FC8C8B195A /* AppCenter.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -630,7 +787,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -669,7 +827,7 @@
 			};
 			name = Release;
 		};
-		F4B191142988C680F1402BA0A95D7485 /* Release */ = {
+		F195B7C3770A6700FAB89973D62160A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 35F1B02E5A0753B3E4AC164B6531086D /* Pods-NGCorePocLib_Example.release.xcconfig */;
 			buildSettings = {
@@ -704,7 +862,7 @@
 		};
 		FABBE1142E1A1CA131963C2626E2C887 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C1EED190361D55342274921DC4F8D02 /* NGCorePocLib.release.xcconfig */;
+			baseConfigurationReference = 2F2DC474063664FFFDD408D184D1A95D /* NGCorePocLib.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -736,11 +894,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		45895E3FBA203B78D09D2F678F599F7B /* Build configuration list for PBXNativeTarget "Pods-NGCorePocLib_Example" */ = {
+		0437EB52E47F4DB542AB24721F109DA8 /* Build configuration list for PBXAggregateTarget "AppCenter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				37D64A81471D295FFDC71D257680CAE8 /* Debug */,
-				F4B191142988C680F1402BA0A95D7485 /* Release */,
+				AB67B16B2EAAA213F2B250F9F40316CC /* Debug */,
+				1A5E61A9C1E978BABFFF8FDFF740E062 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -768,6 +926,15 @@
 			buildConfigurations = (
 				1EDA4DD795E92E3124247DC3C510B9C3 /* Debug */,
 				FABBE1142E1A1CA131963C2626E2C887 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFC8475842EA9D2666244D0EC8779DB7 /* Build configuration list for PBXNativeTarget "Pods-NGCorePocLib_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72E028CD46536F322977ACE81735BC05 /* Debug */,
+				F195B7C3770A6700FAB89973D62160A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

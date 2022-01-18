@@ -8,6 +8,9 @@
 
 import UIKit
 import NGCorePocLib
+import AppCenter
+import AppCenterCrashes
+
 let TAG = "NGCorePocLib"
 
 class ViewController: UIViewController {
@@ -22,6 +25,9 @@ class ViewController: UIViewController {
         print("\(TAG):\(str)")
         let response = NGCorePocMain.compute(lhs: 4, rhs: 4)
         print("\(TAG):\(response)")
+        AppCenter.start(withAppSecret: "a49284aa-0baa-4bb0-bfdf-cce513c0f397", services:[
+          Crashes.self
+        ])
     }
 
     override func didReceiveMemoryWarning() {

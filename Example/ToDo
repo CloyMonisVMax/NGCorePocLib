@@ -1,3 +1,10 @@
+Find a point to trigger Build from Story Branch -> Currently its manual
+Test Native Test Case
+Test Appium Test Case
+done........Distribute .app file for simulator testing by email
+Find a way to send .ipa file recursively
+
+
 Jenkins send IPA to QA.
 Jenkins send IPA to test flight.
 Implement Discussed GitFlow
@@ -10,6 +17,3 @@ Learn Github pipelines
 Jenkins documentation plugin
 
 Plugin references : https://plugins.jenkins.io/xcode-plugin/
-
-
-
