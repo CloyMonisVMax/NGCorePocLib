@@ -2,7 +2,7 @@ Find a point to trigger Build from Story Branch -> Currently its manual
 Test Native Test Case
 Test Appium Test Case
 done........Distribute .app file for simulator testing by email
-Find a way to send .ipa file recursively
+done........Upload app to AppCenter
 
 
 Jenkins send IPA to QA.

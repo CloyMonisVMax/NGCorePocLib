@@ -1,0 +1,95 @@
+timestamps {
+    
+    node () {
+        
+        def workspace = pwd()
+        echo "Working path is ${workspace}"
+        
+        def buildDevice = "${workspace}/Example/build/Release-iphoneos"
+        echo "real device build path is ${buildDevice}"
+        
+        def buildSim = "${workspace}/Example/build"
+        echo "simulator path is ${buildSim}"
+        
+        def xcworkspace = "Example/NGCorePocLib.xcworkspace"
+        echo "xcworkspace name is ${xcworkspace}"
+                
+        def schemeName = "NGCorePocLib-Example"
+        echo "Scheme Name name is ${schemeName}"
+        
+        def xcarchive = "${buildDevice}/NGCorePocLib-Example.xcarchive"
+        echo "xcarchive path is ${xcarchive}"
+        
+        def devteam = "UNJ6ZB598Z"
+        echo "devteam path is ${devteam}"
+        
+        def xcodebuildPath = "/usr/bin/xcodebuild"
+        echo "xcodebuildPath path is ${xcodebuildPath}"
+        
+        def plistBuddyPath = "/usr/libexec/PlistBuddy"
+        echo "plistBuddyPath path is ${plistBuddyPath}"
+        
+        def exportOptionsPlistFile = "Example/build/Release-iphoneos/app-storeUNJ6ZB598ZExportOptions.plist"
+        echo "exportOptionsPlistFile path is ${exportOptionsPlistFile}"
+        
+        def simulatorAppPath = "${buildSim}/Release-iphonesimulator"
+        echo "simulatorAppPath path is ${simulatorAppPath}"
+        
+        def simulatorApp = "${simulatorAppPath}/NGCorePocLib_Example.app/"
+        echo "simulatorApp path is ${simulatorApp}"
+        
+        def simulatorZipPath = "${simulatorAppPath}/NGCorePocLib_Example.zip"
+        echo "simulatorZipPath path is ${simulatorZipPath}"
+        
+        def realDeviceAppWithPath = "${buildDevice}/NGCorePocLib_Example.ipa"
+        echo "realDeviceAppWithPath path is ${realDeviceAppWithPath}"
+         
+        stage('Checkout from GIT'){
+            echo "checking out from GIT"
+             checkout([$class: 'GitSCM', branches: [[name: '*/feature']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '', url: 'https://github.com/CloyMonisVMax/NGCorePocLib.git']]])
+        }
+        
+        stage('Build for simulator'){
+             echo "building app for simulators"
+             sh "'${xcodebuildPath}' -scheme '${schemeName}' -workspace '${xcworkspace}' -sdk iphonesimulator BUILD_DIR='${buildSim}' -configuration release -destination id=C17B197C-DC28-4E98-BBF9-F096FBEA9ED9 "
+        }
+        
+        stage('Build for real device'){
+            echo "building xcarchive"
+            sh "'${xcodebuildPath}' -scheme '${schemeName}' -workspace '${xcworkspace}' -configuration Release clean archive -archivePath '${xcarchive}' DEVELOPMENT_TEAM='${devteam}' -allowProvisioningUpdates "
+            
+            echo "creating exportOptionsPlist file"
+            sh "'${plistBuddyPath}' -c 'add :method string app-store' '${exportOptionsPlistFile}'"
+            sh "'${plistBuddyPath}' -c 'add :teamID string UNJ6ZB598Z' '${exportOptionsPlistFile}'"
+            sh "'${plistBuddyPath}' -c 'add :iCloudContainerEnvironment string Production' '${exportOptionsPlistFile}'"
+            sh "'${plistBuddyPath}' -c 'add :stripSwiftSymbols bool 1' '${exportOptionsPlistFile}'"
+            sh "'${plistBuddyPath}' -c 'add :uploadBitcode bool 1' '${exportOptionsPlistFile}'"
+            sh "'${plistBuddyPath}' -c 'add :uploadSymbols bool 1' '${exportOptionsPlistFile}'"
+            
+            echo "Packaging IPA"
+            
+            sh " '${xcodebuildPath}' -exportArchive -archivePath '${xcarchive}' -exportPath '${buildDevice}' -exportOptionsPlist '${exportOptionsPlistFile}' -allowProvisioningUpdates"
+        }
+        
+        stage('Publish Simulator'){
+            echo "zipping app to upload at google drive"
+            sh "zip -r '${simulatorZipPath}' '${simulatorApp}' "
+             
+            echo "uploading app to google drive by using gdrive"
+            sh "gdrive upload --parent 1vmX9VSvsbXlNmJRWyrUFTulJutCATn9n '${simulatorZipPath}'"
+        }
+        
+        stage('Publish Real Device-AppCenter'){
+            echo "Upload IPA to AppCenter"
+            appCenter apiToken: '94a52d4cbb7b183780bef01d2a74a64fcb96e7db', appName: 'NGPocLibExample', distributionGroups: 'Collaborators', mandatoryUpdate: false, notifyTesters: true, ownerName: 'cloy.m-vmax.com', pathToApp: 'Example/build/Release-iphoneos/NGCorePocLib_Example.ipa'
+        }
+        
+        stage('Publish Real Device iTunesConnect'){
+            echo "Upload IPA to iTunesConnect"
+            
+            sh "xcrun altool --upload-app --type ios --file 'Example/build/Release-iphoneos/NGCorePocLib_Example.ipa' --username 'iossdk@vmax.com' --password 'wyzf-jurj-vree-bpqk'"
+        }
+        
+    }
+    
+}

@@ -15,6 +15,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		97CED561C1D3701D2BE4932E /* Pods_NGCorePocLib_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 067F927C960A8FF24A67C820 /* Pods_NGCorePocLib_Tests.framework */; };
+		9A217BA32796E6A100C519AF /* NGCorePocMainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A217BA22796E6A100C519AF /* NGCorePocMainTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		60E4F371BD6EEE5B9708ABA0 /* Pods-NGCorePocLib_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGCorePocLib_Tests.release.xcconfig"; path = "Target Support Files/Pods-NGCorePocLib_Tests/Pods-NGCorePocLib_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		9A217BA12796E45600C519AF /* JenkinsSource */ = {isa = PBXFileReference; lastKnownFileType = text; path = JenkinsSource; sourceTree = "<group>"; };
+		9A217BA22796E6A100C519AF /* NGCorePocMainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGCorePocMainTests.swift; sourceTree = "<group>"; };
 		9AA8821F27880EB000259091 /* ToDo */ = {isa = PBXFileReference; lastKnownFileType = text; path = ToDo; sourceTree = "<group>"; };
 		D6B5F719F644D0F71D27A530 /* Pods-NGCorePocLib_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGCorePocLib_Example.debug.xcconfig"; path = "Target Support Files/Pods-NGCorePocLib_Example/Pods-NGCorePocLib_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E08597186E06469ABB8054A3 /* NGCorePocLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NGCorePocLib.podspec; path = ../NGCorePocLib.podspec; sourceTree = "<group>"; };
@@ -138,6 +141,7 @@
 			children = (
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				9A217BA22796E6A100C519AF /* NGCorePocMainTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -157,6 +161,7 @@
 				52401E40595127716BDF0F2B /* README.md */,
 				5918FAA517032C154D7C0DAA /* LICENSE */,
 				9AA8821F27880EB000259091 /* ToDo */,
+				9A217BA12796E45600C519AF /* JenkinsSource */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -344,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				9A217BA32796E6A100C519AF /* NGCorePocMainTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
