@@ -481,10 +481,11 @@
 			baseConfigurationReference = D6B5F719F644D0F71D27A530 /* Pods-NGCorePocLib_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = UNJ6ZB598Z;
 				INFOPLIST_FILE = NGCorePocLib/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.NGCorePocLib-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,10 +499,11 @@
 			baseConfigurationReference = 185D2B64FC2F39D3B1022D3C /* Pods-NGCorePocLib_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = UNJ6ZB598Z;
 				INFOPLIST_FILE = NGCorePocLib/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.NGCorePocLib-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";

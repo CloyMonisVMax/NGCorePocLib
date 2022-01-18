@@ -20,7 +20,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let str = "Implementation of CI-CD from NGCorePoc version:\(NGCorePocMain.version)"
+        guard let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String,let buildNumber = Bundle.main.infoDictionary?[kCFBundleVersionKey as String] as? String else {
+            //btn.titleLabel?.text = "Click to action \(appVersion)(\(buildNumber))"
+            self.labelAppDesc.text = "Empty Version"
+            return
+        }
+        let str = "Implementation of CI-CD from NGCorePoc version:\(NGCorePocMain.version) AppVersion:\(appVersion)(\(buildNumber))"
         self.labelAppDesc.text = str
         print("\(TAG):\(str)")
         let response = NGCorePocMain.compute(lhs: 4, rhs: 4)
