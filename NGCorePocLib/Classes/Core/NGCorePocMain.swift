@@ -11,7 +11,7 @@ public class NGCorePocMain{
     public static let version = "0.0.9"
     
     public static func compute(lhs: Int, rhs:Int) -> Int{
-        return lhs + rhs
+        return lhs + rhs + 1
     }
     
 }

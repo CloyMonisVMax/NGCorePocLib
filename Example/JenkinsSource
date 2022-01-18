@@ -93,3 +93,6 @@ timestamps {
     }
     
 }
+
+
+sh " '${xcodebuildPath}' -alltargets -configuration Debug clean build -allowProvisioningUpdates test -scheme '${schemeName}' -sdk iphonesimulator -destination id=C17B197C-DC28-4E98-BBF9-F096FBEA9ED9 "
