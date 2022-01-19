@@ -1,3 +1,8 @@
+NextGen
+GenyMotion
+
+AppCenter Crash, Firebase Crash
+
 timestamps {
     
     node () {
@@ -46,7 +51,20 @@ timestamps {
          
         stage('Checkout from GIT'){
             echo "checking out from GIT"
-             checkout([$class: 'GitSCM', branches: [[name: '*/feature']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '', url: 'https://github.com/CloyMonisVMax/NGCorePocLib.git']]])
+            checkout([$class: 'GitSCM', branches: [[name: '*/feature']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '', url: 'https://github.com/CloyMonisVMax/NGCorePocLib.git']]])
+        }
+        
+        stage('Execute Lint Tools'){
+            echo "run Native Test Cases"
+        }
+        
+        stage('Run Native Test Cases'){
+            echo "run Native Test Cases"
+            sh " '${xcodebuildPath}' -configuration Debug clean build -allowProvisioningUpdates test -scheme '${schemeName}' -workspace '${xcworkspace}' -sdk iphonesimulator -destination id=C17B197C-DC28-4E98-BBF9-F096FBEA9ED9 "
+        }
+        
+        stage('Run Appium Test Cases'){
+            echo 'Pending'
         }
         
         stage('Build for simulator'){
@@ -86,13 +104,10 @@ timestamps {
         
         stage('Publish Real Device iTunesConnect'){
             echo "Upload IPA to iTunesConnect"
-            
             sh "xcrun altool --upload-app --type ios --file 'Example/build/Release-iphoneos/NGCorePocLib_Example.ipa' --username 'iossdk@vmax.com' --password 'wyzf-jurj-vree-bpqk'"
         }
+        
         
     }
     
 }
-
-
-sh " '${xcodebuildPath}' -alltargets -configuration Debug clean build -allowProvisioningUpdates test -scheme '${schemeName}' -sdk iphonesimulator -destination id=C17B197C-DC28-4E98-BBF9-F096FBEA9ED9 "
