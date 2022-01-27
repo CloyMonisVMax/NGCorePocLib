@@ -7,7 +7,9 @@ PODS:
   - AppCenter/Core (4.4.1)
   - AppCenter/Crashes (4.4.1):
     - AppCenter/Core
-  - NGCorePocLib (0.0.9)
+  - NGCorePocLib (0.0.10):
+    - VMaxAdsSDK
+  - VMaxAdsSDK (0.0.96)
 
 DEPENDENCIES:
   - AppCenter
@@ -16,6 +18,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AppCenter
+    - VMaxAdsSDK
 
 EXTERNAL SOURCES:
   NGCorePocLib:
@@ -23,8 +26,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AppCenter: b0b6f1190215b5f983c42934db718f3b46fff3c0
-  NGCorePocLib: 903c4408f9c7f3d3bc1f396f063851cd60cea66b
+  NGCorePocLib: b2497d5b400b696bbde19785cbe39a598501416f
+  VMaxAdsSDK: d87b5104fd7f261f4f308aa87a2880f5c4bc035a
 
-PODFILE CHECKSUM: 0194e3a6970a155f409c565af9f55c30f47b5756
+PODFILE CHECKSUM: 880a508ce75783cec6226c35fc4e90657b26a341
 
 COCOAPODS: 1.11.2

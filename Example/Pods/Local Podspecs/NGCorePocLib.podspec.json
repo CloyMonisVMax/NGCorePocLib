@@ -1,6 +1,6 @@
 {
   "name": "NGCorePocLib",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "summary": "NGCorePocLib is a poc for VMNgLibs",
   "description": "NGCorePocLib will implement CI-CD via Jenkins and Appium",
   "homepage": "https://github.com/Cloy Monis/NGCorePocLib",
@@ -13,10 +13,15 @@
   },
   "source": {
     "git": "https://github.com/CloyMonisVMax/NGCorePocLib.git",
-    "tag": "0.0.9"
+    "tag": "0.0.10"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "10.0"
   },
-  "source_files": "NGCorePocLib/Classes/**/*"
+  "source_files": "NGCorePocLib/Classes/**/*",
+  "dependencies": {
+    "VMaxAdsSDK": [
+
+    ]
+  }
 }

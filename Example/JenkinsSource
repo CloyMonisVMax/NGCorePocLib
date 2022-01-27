@@ -1,6 +1,8 @@
-NextGen
-GenyMotion
-
+Use GenyMotion
+Use Tool For Code Coverage -> (Test Cases is written for all classes or not)
+/usr/bin/xcodebuild -scheme NGCorePocLib-Example -workspace NGCorePocLib.xcworkspace -sdk iphonesimulator -destination id=C17B197C-DC28-4E98-BBF9-F096FBEA9ED9 -enableCodeCoverage YES clean build test
+xcrun xccov view --report --json Run-NGCorePocLib-Example-2022.01.20_13-54-04-+0530.xcresult > coverage.json
+Use Jenkins tool to display all test cases
 AppCenter Crash, Firebase Crash
 
 timestamps {
@@ -87,6 +89,7 @@ timestamps {
             echo "Packaging IPA"
             
             sh " '${xcodebuildPath}' -exportArchive -archivePath '${xcarchive}' -exportPath '${buildDevice}' -exportOptionsPlist '${exportOptionsPlistFile}' -allowProvisioningUpdates"
+            
         }
         
         stage('Publish Simulator'){
@@ -111,3 +114,6 @@ timestamps {
     }
     
 }
+
+
+            sh /usr/bin/xcodebuild -exportArchive -archivePath /Users/cloymonis/Downloads/NGCorePocLib-Example.xcarchive -exportPath /Users/cloymonis/Downloads -exportOptionsPlist exportOptionsPlist.plist -allowProvisioningUpdates

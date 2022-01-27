@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<checkstyle version="4.3">
+	<file name="/Users/cloymonis/VServWorkspace/Git_Source/ng_dump/CI_CD/NGCorePocLib/Example/NGCorePocLib/AppDelegate.swift">
+		<error line="22" column="88" severity="warning" message="Colons should be next to the identifier when specifying a type and next to the key in dictionary literals." source="swiftlint.rules.colon"/>
+		<error line="31" column="11" severity="warning" message="Prefer at least one space after slashes for comments." source="swiftlint.rules.comment_spacing"/>
+		<error line="20" column="0" severity="warning" message="Line should be 120 characters or less: currently 144 characters" source="swiftlint.rules.line_length"/>
+		<error line="33" column="0" severity="warning" message="Line should be 120 characters or less: currently 155 characters" source="swiftlint.rules.line_length"/>
+		<error line="38" column="0" severity="warning" message="Line should be 120 characters or less: currently 157 characters" source="swiftlint.rules.line_length"/>
+		<error line="39" column="0" severity="warning" message="Line should be 120 characters or less: currently 141 characters" source="swiftlint.rules.line_length"/>
+		<error line="43" column="0" severity="warning" message="Line should be 120 characters or less: currently 157 characters" source="swiftlint.rules.line_length"/>
+		<error line="47" column="0" severity="warning" message="Line should be 120 characters or less: currently 194 characters" source="swiftlint.rules.line_length"/>
+		<error line="51" column="0" severity="warning" message="Line should be 120 characters or less: currently 128 characters" source="swiftlint.rules.line_length"/>
+		<error line="56" column="0" severity="warning" message="Files should have a single trailing newline." source="swiftlint.rules.trailing_newline"/>
+		<error line="19" column="0" severity="warning" message="Limit vertical whitespace to a single empty line. Currently 2." source="swiftlint.rules.vertical_whitespace"/>
+		<error line="54" column="0" severity="warning" message="Limit vertical whitespace to a single empty line. Currently 2." source="swiftlint.rules.vertical_whitespace"/>
+	</file>
+	<file name="/Users/cloymonis/VServWorkspace/Git_Source/ng_dump/CI_CD/NGCorePocLib/Example/NGCorePocLib/ViewController.swift">
+		<error line="33" column="88" severity="warning" message="Colons should be next to the identifier when specifying a type and next to the key in dictionary literals." source="swiftlint.rules.colon"/>
+		<error line="23" column="100" severity="warning" message="There should be no space before and one after any comma." source="swiftlint.rules.comma"/>
+		<error line="24" column="15" severity="warning" message="Prefer at least one space after slashes for comments." source="swiftlint.rules.comment_spacing"/>
+		<error line="23" column="0" severity="warning" message="Line should be 120 characters or less: currently 194 characters" source="swiftlint.rules.line_length"/>
+		<error line="28" column="0" severity="warning" message="Line should be 120 characters or less: currently 132 characters" source="swiftlint.rules.line_length"/>
+		<error line="44" column="0" severity="warning" message="Files should have a single trailing newline." source="swiftlint.rules.trailing_newline"/>
+		<error line="19" column="0" severity="warning" message="Lines should not have trailing whitespace." source="swiftlint.rules.trailing_whitespace"/>
+		<error line="22" column="0" severity="warning" message="Lines should not have trailing whitespace." source="swiftlint.rules.trailing_whitespace"/>
+	</file>
+	<file name="/Users/cloymonis/VServWorkspace/Git_Source/ng_dump/CI_CD/NGCorePocLib/Example/Tests/NGCorePocMainTests.swift">
+		<error line="22" column="23" severity="warning" message="Opening braces should be preceded by a single space and on the same line as the declaration." source="swiftlint.rules.opening_brace"/>
+	</file>
+	<file name="/Users/cloymonis/VServWorkspace/Git_Source/ng_dump/CI_CD/NGCorePocLib/Example/Tests/Tests.swift">
+		<error line="23" column="21" severity="warning" message="When using trailing closures, empty parentheses should be avoided after the method call." source="swiftlint.rules.empty_parentheses_with_trailing_closure"/>
+		<error line="5" column="0" severity="warning" message="Lines should not have trailing whitespace." source="swiftlint.rules.trailing_whitespace"/>
+		<error line="10" column="0" severity="warning" message="Lines should not have trailing whitespace." source="swiftlint.rules.trailing_whitespace"/>
+		<error line="15" column="0" severity="warning" message="Lines should not have trailing whitespace." source="swiftlint.rules.trailing_whitespace"/>
+		<error line="20" column="0" severity="warning" message="Lines should not have trailing whitespace." source="swiftlint.rules.trailing_whitespace"/>
+		<error line="27" column="0" severity="warning" message="Lines should not have trailing whitespace." source="swiftlint.rules.trailing_whitespace"/>
+	</file>
+</checkstyle>

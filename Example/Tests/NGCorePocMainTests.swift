@@ -19,7 +19,7 @@ class NGCorePocMainTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testSuccess(){
+    func testSuccess() {
         XCTAssertTrue(4 == NGCorePocMain.compute(lhs: 2, rhs: 2))
     }
 

@@ -25,11 +25,31 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gss-Qv-gos">
+                                <rect key="frame" x="124.5" y="367" width="126" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Crash from App"/>
+                                <connections>
+                                    <action selector="actionCrashFromApp:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Jkx-TE-70w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mvg-qQ-TgA">
+                                <rect key="frame" x="124" y="406" width="127.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Crash from SDK"/>
+                                <connections>
+                                    <action selector="actionCrashFromSDK:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gxc-ZN-Jhq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="gss-Qv-gos" firstAttribute="centerX" secondItem="fcJ-wo-MWp" secondAttribute="centerX" id="FK2-39-dsE"/>
                             <constraint firstItem="fcJ-wo-MWp" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" multiplier="0.7" id="Ocz-WZ-jVd"/>
                             <constraint firstItem="fcJ-wo-MWp" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="Ucc-t8-trI"/>
+                            <constraint firstItem="mvg-qQ-TgA" firstAttribute="centerX" secondItem="gss-Qv-gos" secondAttribute="centerX" id="rCU-vo-bk0"/>
+                            <constraint firstItem="gss-Qv-gos" firstAttribute="top" secondItem="fcJ-wo-MWp" secondAttribute="bottom" constant="23" id="uu9-WZ-Fe7"/>
+                            <constraint firstItem="mvg-qQ-TgA" firstAttribute="top" secondItem="gss-Qv-gos" secondAttribute="bottom" constant="8" symbolic="YES" id="wsx-iV-7Rh"/>
                             <constraint firstItem="fcJ-wo-MWp" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="zxr-66-GJn"/>
                         </constraints>
                     </view>

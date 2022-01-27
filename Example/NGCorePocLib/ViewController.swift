@@ -16,6 +16,7 @@ let TAG = "NGCorePocLib"
 class ViewController: UIViewController {
 
     @IBOutlet var labelAppDesc: UILabel!
+    var forceWrapCrash: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +40,17 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    @IBAction func actionCrashFromApp(_ sender: Any) {
+        print("will crash now")
+        let val = 2 + forceWrapCrash
+        print(val)
+    }
+    
+    @IBAction func actionCrashFromSDK(_ sender: Any) {
+        print("actionCrashFromSDK")
+        NGCorePocMain.computeSome()
+    }
+    
 }
 
