@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name             = 'NGCorePocLib'
-  s.version          = '0.0.11'
+  s.version          = '0.0.12'
   s.summary          = 'NGCorePocLib is a poc for VMNgLibs'
   s.description      = 'NGCorePocLib will implement CI-CD via Jenkins and Appium'
-  s.homepage         = 'https://github.com/Cloy Monis/NGCorePocLib'
+  s.homepage         = 'https://github.com/CloyMonisVMax/NGCorePocLib'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Cloy Monis' => 'cloy.m@vmax.com' }
   s.source           = { :git => 'https://github.com/CloyMonisVMax/NGCorePocLib.git', :tag => s.version.to_s }
@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
   s.source_files = 'NGCorePocLib/Classes/**/*'
   s.dependency 'VMaxAdsSDK', '0.0.92'
   s.pod_target_xcconfig = { 'ONLY_ACTIVE_ARCH' => 'YES' }
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 i386' }
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 i386' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
