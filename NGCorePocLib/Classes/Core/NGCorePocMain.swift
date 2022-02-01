@@ -8,7 +8,7 @@ import Foundation
 
 public class NGCorePocMain{
     
-    public static let version = "0.0.13"
+    public static let version = "0.0.14"
     
     public static func compute(lhs: Int, rhs:Int) -> Int{
         return lhs + rhs
