@@ -9,7 +9,7 @@ import Foundation
 public class NGCorePocMain{
     
     public static let version = "0.0.14"
-    public var vmax = "a"
+    public var vmax = "b"
     
     public static func compute(lhs: Int, rhs:Int) -> Int{
         return lhs + rhs
