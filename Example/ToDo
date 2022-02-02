@@ -17,3 +17,52 @@ Learn Github pipelines
 Jenkins documentation plugin
 
 Plugin references : https://plugins.jenkins.io/xcode-plugin/
+
+
+timestamps {
+    node () {
+        
+        def workspace = pwd()
+        echo "Working path is ${workspace}"
+        
+        def buildDevice = "${workspace}/Example/build/Release-iphoneos"
+        echo "real device build path is ${buildDevice}"
+        
+        def buildSim = "${workspace}/Example/build"
+        echo "simulator path is ${buildSim}"
+        
+        def xcworkspace = "Example/NGCorePocLib.xcworkspace"
+        echo "xcworkspace name is ${xcworkspace}"
+                
+        def schemeName = "NGCorePocLib-Example"
+        echo "Scheme Name name is ${schemeName}"
+        
+        def xcarchive = "${buildDevice}/NGCorePocLib-Example.xcarchive"
+        echo "xcarchive path is ${xcarchive}"
+        
+        def devteam = "UNJ6ZB598Z"
+        echo "devteam path is ${devteam}"
+        
+        def xcodebuildPath = "/usr/bin/xcodebuild"
+        echo "xcodebuildPath path is ${xcodebuildPath}"
+        
+        def plistBuddyPath = "/usr/libexec/PlistBuddy"
+        echo "plistBuddyPath path is ${plistBuddyPath}"
+        
+        def exportOptionsPlistFile = "Example/build/Release-iphoneos/app-storeUNJ6ZB598ZExportOptions.plist"
+        echo "exportOptionsPlistFile path is ${exportOptionsPlistFile}"
+        
+        def simulatorAppPath = "${buildSim}/Release-iphonesimulator"
+        echo "simulatorAppPath path is ${simulatorAppPath}"
+        
+        def simulatorApp = "${simulatorAppPath}/NGCorePocLib_Example.app/"
+        echo "simulatorApp path is ${simulatorApp}"
+        
+        def simulatorZipPath = "${simulatorAppPath}/NGCorePocLib_Example.zip"
+        echo "simulatorZipPath path is ${simulatorZipPath}"
+        
+        def realDeviceAppWithPath = "${buildDevice}/NGCorePocLib_Example.ipa"
+        echo "realDeviceAppWithPath path is ${realDeviceAppWithPath}"
+        
+    }
+}
