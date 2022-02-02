@@ -10,7 +10,7 @@ public class NGCorePocMain{
     
     public static let version = "0.0.14"
     public var vmax = "v"
-    public var min = 23
+    public var min = 23111
     
     public static func compute(lhs: Int, rhs:Int) -> Int{
         let minmin = min +2
