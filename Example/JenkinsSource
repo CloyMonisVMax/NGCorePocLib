@@ -213,5 +213,12 @@ timestamps {
 
 
 
+        stage('Show Code Coverage'){
+            sh "xcrun xccov view --report --json ${xcResultPath} > coverage.json"
+            sh "xcrun swift Example/CodeCoverage/xccov-json-to-cobertura-xml.swift coverage.json > cobertura.xml"
+            cobertura coberturaReportFile: 'cobertura.xml'
+        }
+
+
 
 
