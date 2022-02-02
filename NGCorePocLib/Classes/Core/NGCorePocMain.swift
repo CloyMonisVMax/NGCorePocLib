@@ -13,7 +13,6 @@ public class NGCorePocMain{
     public var min = 23111
     
     public static func compute(lhs: Int, rhs:Int) -> Int{
-        let minmin = min +2
         return lhs + rhs
     }
     
