@@ -9,7 +9,7 @@ import Foundation
 public class NGCorePocMain{
     
     public static let version = "0.0.14"
-    public var vmax = "vservv"
+    public var vmax = "vmax"
     public var min = 23111
     
     public static func compute(lhs: Int, rhs:Int) -> Int{
